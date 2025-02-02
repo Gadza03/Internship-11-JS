@@ -1,9 +1,9 @@
 let books = [];
 
 do {
-  let title = validateText("Enter a title: ");
+  let title = validateText("Enter a title of book: ");
   let price = validatePrice();
-  let genre = validateText("Enter a ganre: ");
+  let genre = validateText("Enter a ganre of book: ");
 
   let book = {
     title: title,

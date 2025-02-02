@@ -1,8 +1,8 @@
 const plants = [];
 
 do {
-  const plantName = validateText("Enter plant name: ");
-  const color = validateText("Enter color: ");
+  const plantName = validateText("Enter a plant's name: ");
+  const color = validateText("Enter a plant's color: ");
   const calories = validateCalories();
 
   const plant = {

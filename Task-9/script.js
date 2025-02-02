@@ -11,7 +11,7 @@ cities.forEach((city) => {
   console.log(city);
 });
 
-const filteredCities = cities.filter((city) => city.length > 5); // Store the result
+const filteredCities = cities.filter((city) => city.length > 5);
 
 console.log("\nCities with name longer than 5 characters:");
 filteredCities.forEach((city) => {

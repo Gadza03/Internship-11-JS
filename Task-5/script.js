@@ -1,8 +1,8 @@
 const students = [];
 
 do {
-  const firstName = validateText("Enter a name: ");
-  const lastName = validateText("Enter a surname: ");
+  const firstName = validateText("Enter a student's name: ");
+  const lastName = validateText("Enter a student's surname: ");
   const score = validateScore();
 
   const student = {

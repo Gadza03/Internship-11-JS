@@ -1,8 +1,8 @@
 const industries = [];
 
 do {
-  const name = validateText("Enter a name: ");
-  const surname = validateText("Enter a surname: ");
+  const name = validateText("Enter a worker's name: ");
+  const surname = validateText("Enter a worker's surname: ");
   const industryName = validateText("Enter an industry name: ");
   const salary = validatePrice();
 

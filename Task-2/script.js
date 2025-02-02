@@ -1,9 +1,9 @@
 let workers = [];
 
 do {
-  let name = validateText("Enter a name: ");
-  let surname = validateText("Enter a surname: ");
-  let industry = validateText("Enter an indurstry: ");
+  let name = validateText("Enter a worker's name:: ");
+  let surname = validateText("Enter a worker's surname: ");
+  let industry = validateText("Enter an indurstry name: ");
   let salary = validateSalary();
 
   let worker = {
