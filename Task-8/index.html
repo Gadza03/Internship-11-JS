@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      row-gap: 10px;
+    }
+
+    input[type="radio"] {
+      align-self: flex-start;
+    }
+  </style>
+  <body>
+    <form id="equipment-form">
+      <label for="name-input">Equipment name:</label>
+      <input type="text" id="name-input" placeholder="Mirko" />
+
+      <label for="price-input">Equipment price:</label>
+      <input type="text" id="price-input" placeholder="12.5" />
+
+      <label for="available">Equipment status:</label>
+      <input
+        type="radio"
+        id="available"
+        name="status"
+        value="Available"
+        checked
+      />
+      <label for="available">Available</label>
+
+      <input type="radio" id="unavailable" name="status" value="Unavailable" />
+      <label for="unavailable">Unavailable</label>
+
+      <button type="submit">Add Equipment</button>
+    </form>
+
+    <h3>Equipment List</h3>
+    <ul id="equipment-list"></ul>
+
+    <p id="status-ratio"></p>
+  </body>
   <script src="script.js"></script>
 </html>
