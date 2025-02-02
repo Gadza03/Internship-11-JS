@@ -18,19 +18,19 @@ const averagePriceBooks = averagePrice().toFixed(2);
 console.log(`Average price of books is: ${averagePriceBooks}$`);
 
 const bookWithMaxDeviation = getBookWithMaxDeviation();
-console.log(`Book with max deviation is:`);
+console.log(`\nBook with max deviation is:`);
 console.log(bookWithMaxDeviation);
 
 const sortedBooksWithDeviation = books.sort(
   (a, b) => a.deviation - b.deviation
 );
-console.log("Books sorted by deviation from the average price:");
+console.log("\nBooks sorted by deviation from the average price:");
 sortedBooksWithDeviation.forEach((book) => {
   console.log(`${book.title} - Deviation: ${book.deviation.toFixed(2)}`);
 });
 
 function getBookWithMaxDeviation() {
-  let maxDeviation = 0;
+  let maxDeviation = -1;
   let bookWithMaxDeviation = null;
 
   books.forEach((book) => {
